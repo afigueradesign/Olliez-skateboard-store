@@ -1,0 +1,378 @@
+.hero{
+    width: 1240px;
+    height: 600px;
+    position: relative;
+    margin-top: 40px;
+
+}
+
+.hero-background{
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    background: #EBFDFF;
+    width: 1240px;
+    height: 546px;
+    border-radius: 24px 24px 0 0;
+    z-index: 1;
+    position: absolute;
+}
+
+.hero-elements{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.hero__textos{
+    width: 580px;
+    padding-left: 32px;
+    padding-right: 86px;
+    z-index: 2;
+
+}
+
+.hero__textos h1{
+    margin-bottom: 28px;
+}
+
+.hero__textos p{
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-family: var(--secondary-text);
+}
+
+.hero-elements picture{
+    margin-top: -40px;
+    z-index: 2;
+}
+
+
+/* About  */
+
+.home-about{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30% 70%;
+    grid-template-areas: "col-about-1 col-about-2"
+                         "col-about-3 col-about-3";
+}
+
+
+
+.home-about__textos{
+    grid-area: col-about-1;
+    padding-right: 44px;
+    
+    & h2{
+        margin-bottom:  24px;
+    }
+    & p{
+        margin-bottom:  24px;
+    }
+
+
+}
+.home-about__valores{
+    grid-area: col-about-2;
+    background: #EBFDFF;
+    border-radius: 16px;
+    padding: 56px 48px;
+
+    display: grid;
+    grid-template-columns: 35%  65%;
+    grid-template-rows: 1fr;
+    align-items: center;
+
+
+    & .valores__lista{
+        margin-left: 34px;
+    
+    }
+
+    & .valores__lista__contenido{
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid black;
+        padding: 8px 0;
+
+        & p {
+            font-size: 18px;
+            font-family: var(--secondary-text);
+            font-weight: 500;
+
+        }
+    }
+}
+
+
+.home-about__img{
+    grid-area: col-about-3;
+    width: 100%;
+}
+
+
+/* Servicios */
+
+.home-servicios{
+
+    margin-top: 100px;
+
+    & h2 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+}
+
+.home-sevicios__card-container{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+   
+}
+
+.home-servicios__card{
+    border-radius: 32px;
+    background: #063146;
+    width: 244px;
+    height: 345px;
+    padding: 36px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    & svg {
+        width: 134px;
+        height: 134px;
+        margin-bottom: 16px;
+    }
+
+    & h3 {
+        color: white;
+        margin-bottom: 16px;
+    }
+
+
+
+}
+
+.home-servicios__card:nth-child(1) {
+    background: #00AED6;
+
+}
+
+
+/* home-tablas-mas-vendidas */
+
+.home-tablas-mas-vendidas{
+    margin-top: 100px;
+}
+
+.home-tablas-mas-vendidas h2{
+    text-align: center;
+  }
+  
+
+.home-tablas-mas-vendidas__articulo-principal{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+}
+
+.mas-vendido__información{
+    & > p {
+        margin-top: 20px;
+    }
+    & > a{
+        margin-top: 24px;
+    }
+}
+
+.mas-vendido__precio__contenedor{
+    display: flex;
+}
+
+.mas-vendido__precio{
+    font-family: var(--primary-text);
+    font-weight: 700;
+    font-size: 36px;
+    color: #00AED6;
+    margin-right: 24px;
+   
+}
+
+.mas-vendido__precio-anterior{
+    font-family: var(--primary-text);
+    font-weight: 700;
+    font-size: 36px;
+    color: rgba(175, 240, 255, 0.534);
+    
+}
+
+.mas-vendido__img-detalle{
+    display: flex;
+
+    & img{
+        width: 284px;
+        height: 160px;
+        padding-right: 42px;
+        margin-top: 24px;
+    }    
+}
+
+
+.home-tablas-mas-vendidas__varios-articulo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    margin-top: 34px;
+
+
+    & .varios-articulos__producto{
+
+        margin: auto;
+
+        & img {
+            width: 132px;
+            height: 420px;
+        }
+         & .varios-articulos__producto__textos{
+            text-align: center;
+        }
+        & .varios-articulos__producto__precio{
+            text-align: center;
+            margin-top: 8px;
+            color: #00AED6;
+            font-family: var(--primary-text);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+    }        
+}
+
+
+.logos-marcas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-top: 80px;
+}
+
+.home-tablas-mas-vendidas__boton-final {
+    display: grid;
+    grid-template-columns: 1fr 234px;
+    grid-template-rows: 1fr;
+    height: 60px;
+    align-items: center;
+    margin-top: 80px;
+    margin-right: 6%;
+}
+
+.boton-final__linea{
+    border: solid 1px #00AED6;
+    width: 98%;
+    
+}
+
+
+/*  Colecciones  */
+
+.colecciones{
+    display: flex;
+    height: 662px;
+    width: 100%;
+    margin-top: 100px;
+
+    & h4 {
+        text-align: center;
+        color: white;
+        margin-bottom: 12px;
+    }
+}
+
+
+
+
+.colecciones__col1{
+    width: 40%;
+    background-image: url(/resources/img/ropa-home.jpg);
+    margin-right: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 48px;
+
+    background-color: #063146;
+}
+
+
+
+.colecciones__col2{
+    width: 60%;
+    height: 662px;
+    display: grid;
+    grid-template-columns: repeat(7, 14.28%);
+    grid-template-rows: repeat(2, 1fr);
+    
+
+    grid-template-areas: 
+    "col-lg col-lg col-lg col-lg col-lg col-lg col-lg"
+    "col-sm col-sm col-sm col-md col-md col-md col-md";
+}
+
+.colecciones__partes{
+    grid-area: col-lg;
+    background-color: #00AED6;
+    margin-bottom: 20px;
+
+    background-image: url(/resources/img/partes-tienda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 48px;
+}
+.colecciones__protectores{
+    grid-area: col-sm;
+    background-color: #063146;
+    margin-right: 10px;
+
+    background-image: url(/resources/img/HELMET-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 48px;
+}
+.colecciones__zapatos{
+    grid-area: col-md;
+    background-color: brown;
+    margin-left: 10px;
+
+    background-image: url(/resources/img/zapatos-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 48px;
+}
+
+
+

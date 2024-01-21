@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet"href="./css/home.css">
+
+    
+    <title>Olliez - Skateboard Store</title>
+</head>
+<body>
+    <header class="container header">
+        <div class="logo-header"><a href="index.html">OLLIEZ</a></div>
+
+        <nav >
+            <ul class="nav-menu">
+                <li><a class="btn-nav-menu">Historia</a></li>
+                <li><a href="tienda.html" class="btn-nav-menu">Tienda</a></li>
+                <li><a class="btn-nav-menu">Servicios</a></li>
+                <li><a class="btn-nav-menu">Blog</a></li>
+                <li><a class="btn-nav-menu">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-iconos">
+
+            <button class="menu-iconos__search"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                <path d="M21 21l-6 -6" />
+              </svg>
+            </button>
+            <button class="menu-iconos__user">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                  </svg>
+            </button>
+            <button class="menu-iconos__shopping-car">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                  </svg>
+            </button>
+              
+        </div>
+
+    </header>
+    
+    
+    <section class="hero container">
+        <div class="hero-background"></div>
+
+        <section class="hero-elements">
+            <article class="hero__textos">
+                <h1 class="h1-desktop">Skateboards de última generación</h1>
+                <p>No te quedes atrás. Prueba las mejores tablas de skate del momento.</p>
+                
+                <a href="#" class="btn-principal "><svg xmlns="http://www.w3.org/2000/svg" class="btn-icon icon icon-tabler icon-tabler-skateboard" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M7 15m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M17 15m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M3 9a2 1 0 0 0 2 1h14a2 1 0 0 0 2 -1" />
+                  </svg>Skateboards</a>
+            </article>
+    
+            <picture class="hero-elements__img">
+                <source srcset="resources/img/img-hero.png" media="(min-width: 1024px)">
+                <source srcset="resources/img/img-hero.png" media="(min-width: 600px)">
+                <img src="resources/img/img-hero.png" alt="">
+                
+            </picture>
+        </section>
+    </section>
+
+
+    <section class="home-about container">
+        <article class="home-about__textos">
+            <h2 class="h2-desktop">Olliez - Skateboard Store</h2>
+            <p>Olliez es una tienda de skateboard con 5 años de experiencia en Barcelona. Somos una empresa comprometida con el apoyo al nuevo talento del skate, por eso organizamos eventos a lo largo del año para promover el skate profesional.</p>
+            <a href="#" class="btn-principal">Más de nosotros</a>
+        </article>
+
+        <section class="home-about__valores">
+            <h2 class="h2-desktop">Nuestros valores</h2>
+
+            <section class="valores__lista">
+                <div class="valores__lista__contenido">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 12l2 2l4 -4" />
+                        <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                      </svg>
+
+                    <p>Apoyo al nuevo talento</p>
+
+                </div>
+                <div class="valores__lista__contenido">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 12l2 2l4 -4" />
+                        <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                      </svg>
+
+                    <p>Compromiso con la comunidad</p>
+
+                </div>
+                <div class="valores__lista__contenido">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square-rounded-check" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 12l2 2l4 -4" />
+                        <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                      </svg>
+
+                    <p>Innovación</p>
+
+                </div>
+            </section>
+          
+
+        </section>
+
+        <img src="resources/img/img-home-about.png" class="home-about__img"  alt="">
+    </section>
+
+
+    <!-- Servicios  -->
+
+    <section class="home-servicios container">
+
+        <h2 class="h2-desktop">Servicios</h2>
+
+        <section class="home-sevicios__card-container">
+
+            <div class="home-servicios__card">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                </svg>
+
+                <h3 class="h3-desktop">Tienda</h3>
+
+                <a href="#" class="btn-secondary-md">Ver productos</a>
+
+            </div>
+
+            <div class="home-servicios__card">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                </svg>
+
+                <h3 class="h3-desktop">Parque</h3>
+
+                <a href="#" class="btn-principal-md">Descubre más</a>
+
+            </div>
+
+            <div class="home-servicios__card">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                </svg>
+
+                <h3 class="h3-desktop">Entrenadores</h3>
+
+                <a href="#" class="btn-principal-md">Entrenar</a>
+
+            </div>
+
+            <div class="home-servicios__card">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" />
+                </svg>
+
+                <h3 class="h3-desktop ">Eventos</h3>
+
+                <a href="#" class="btn-principal-md">Descubre más</a>
+
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <!-- Tablas más vendidas -->
+
+    <section class="home-tablas-mas-vendidas container">
+
+        <h2 class="h2-desktop">Tablas más vendidas</h2>
+
+        <section class="home-tablas-mas-vendidas__articulo-principal">   
+
+            <article class="mas-vendido__información">
+                <h4 class="h3-desktop">Skateboard 05</h4>
+                <p class="p-desktop">Prueba nuestra nueva tabla con mejoras en la estabilidad</p>
+                <div class="mas-vendido__precio__contenedor">
+                    <p class="mas-vendido__precio">$80,00</p>
+                    <p class="mas-vendido__precio-anterior">$100,00</p>
+                </div>
+                <div class="mas-vendido__img-detalle">
+                    <img src="/resources/img/img-detalle.png" alt="">
+                    <img src="/resources/img/img-detalle.png" alt="">
+                </div>
+
+                <a href="#" class="btn-principal">Ver producto</a>
+
+
+            </article>
+
+            <article class="mas-vendido__img-principal">
+                <img src="resources/img/mv-img-principal.png" alt="">
+
+            </article>
+
+        </section>
+
+        <section class="home-tablas-mas-vendidas__varios-articulo">
+        
+            <article class="varios-articulos__producto">
+                <img src="resources/img/skt-table-01.png" alt="">
+                <div class="varios-articulos__producto__textos">
+                    <h5 class="h5-desktop">Skateboard 01</h5>
+                    <p>Tabla verde 01</p>
+                </div>
+                <p class="varios-articulos__producto__precio">$85.00</p>
+            </article>
+
+            <article class="varios-articulos__producto">
+                <img src="resources/img/skt-table-01.png" alt="">
+                <div class="varios-articulos__producto__textos">
+                    <h5 class="h5-desktop">Skateboard 02</h5>
+                    <p>Tabla verde 02</p>
+                </div>
+                <p class="varios-articulos__producto__precio">$85.00</p>
+            </article>
+
+            <article class="varios-articulos__producto">
+                <img src="resources/img/skt-table-01.png" alt="">
+                <div class="varios-articulos__producto__textos">
+                    <h5 class="h5-desktop">Skateboard 03</h5>
+                    <p>Tabla verde 03</p>
+                </div>
+                <p class="varios-articulos__producto__precio">$85.00</p>
+            </article>
+
+            <article class="varios-articulos__producto">
+                <img src="resources/img/skt-table-01.png" alt="">
+                <div class="varios-articulos__producto__textos">
+                    <h5 class="h5-desktop">Skateboard 04</h5>
+                    <p>Tabla verde 04</p>
+                </div>
+                <p class="varios-articulos__producto__precio">$85.00</p>
+            </article>
+        
+        </section>
+
+        <section class="logos-marcas">
+            <img src="resources/img/105-new_logo_small.png" alt="">
+            <img src="resources/img/142-new_logo_small.png" alt="">
+            <img src="resources/img/15-new_logo_small.png" alt="">
+            <img src="resources/img/157-new_logo_small.png" alt="">
+            <img src="resources/img/196-new_logo_small.png" alt="">
+            <img src="resources/img/2-new_logo_small.png" alt="">
+            <img src="resources/img/29-new_logo_small.png" alt="">
+            <img src="resources/img/56-new_logo_small.png" alt="">
+            <img src="resources/img/5-new_logo_small.png" alt="">
+            <img src="resources/img/75-new_logo_small.png" alt="">
+        </section>
+
+    
+    </section>
+    
+    <div class="home-tablas-mas-vendidas__boton-final">
+        <span class="boton-final__linea"></span>
+        <a href="#" class="btn-principal-md">Ver tienda</a>
+
+    </div>
+
+    <!-- Colecciones -->
+
+    <section class="colecciones container">
+
+        <section class="colecciones__ropaAccesorios colecciones__col1">
+            <h4 class="h4-desktop">Ropa y accesorios</h4>
+            <a href="#" class="btn-ghost-md">Ver productos</a>
+        </section>
+
+        <section class="colecciones__col2">
+            <section class="colecciones__partes">
+                <div>
+                    <h4 class="h4-desktop">Partes</h4>
+                    <a href="#" class="btn-ghost-md">Ver productos</a>
+                </div>
+            </section>
+            <section class="colecciones__protectores">
+                <div>
+                    <h4 class="h4-desktop">Protectores</h4>
+                    <a href="#" class="btn-ghost-md">Ver productos</a>
+                </div>
+            </section>
+            <section class="colecciones__zapatos">
+                <div>
+                    <h4 class="h4-desktop">Zapatos</h4>
+                    <a href="#" class="btn-ghost-md">Ver productos</a>
+                </div>
+            </section>
+           
+        </section>
+
+    </section>
+    
+    
+    
+
+
+    
+    
+
+</body>
+</html>
