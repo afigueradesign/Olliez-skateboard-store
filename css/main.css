@@ -7,7 +7,7 @@
   --primary-text: 'Titillium Web', sans-serif;
   --secondary-text: 'Roboto', sans-serif;
   --color-principal: #063146;
-
+  --color-secundary: #00AED6;
 }
 
 *{
@@ -172,14 +172,14 @@ a {
 
 .h4-desktop{
   font-family: var(--primary-text);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.1em; 
 }
 
 .h5-desktop{
   font-family: var(--primary-text);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.1em; 
 }

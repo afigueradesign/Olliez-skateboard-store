@@ -435,7 +435,7 @@
 
 .entrenadores__contenedor{
     background: var(--color-principal);
-    height: 950px;
+    height: 920px;
     margin-top: 100px;
 }
 
@@ -454,16 +454,18 @@
 
 .card-entrenadores{
     background: linear-gradient(360deg, rgba(0,174,214, 1),  rgba(0,174,214, 0.5), rgba(0,174,214, 0));
-    height: 660px;
+    height: 560px;
     width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 16px;
 
 }
 
 .card-entrenadores img{
     width: 380px;
+    margin-bottom: 16px;
 }
 
 .card-entrenadores__texto{
@@ -476,9 +478,215 @@
     text-align: center;
     font-size: 50px;
     line-height: 1em;
+    margin-bottom: 16px;
 }
 
 .card-entrenadores__parrafo{
     color: white;
     text-align: center;
 }
+
+.card-entrenadores:nth-child(2){
+    margin-top: -100px;
+}
+
+.entrena-con-olliez__contenedor{
+    background: var(--color-secundary);
+    height: 750px;
+
+
+    & h2{
+        color: white;
+        text-align: center;
+        padding: 48px 0;
+    }
+}
+
+.entrenadores-detalles__contenedor{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(2, 180px);
+    gap: 20px;
+    grid-template-areas:  "ed-1   ed-2"
+                            "ed-3 ed-3";
+}
+
+.entredadores-detalles{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 16px;
+    padding: 18px 28px;
+    align-items: center;
+
+  
+}
+
+.entredadores-detalles:nth-child(1){
+    grid-area: ed-1;
+}
+.entredadores-detalles:nth-child(2){
+    grid-area: ed-2;
+}
+.entredadores-detalles:nth-child(3){
+    grid-area: ed-3;
+
+    & h3{
+        padding-right: 44px;
+    }
+
+    & p{
+        width: 40%;
+        padding-left: 44px;
+        color: white;
+        font-family: var(--secondary-text);
+        line-height: 1.2rem;
+    }
+
+}
+
+.ed-linea-vertical{
+    border: 1px solid white;
+    height: 80%;
+    
+}
+
+.entredadores-detalles__titulo{
+    font-size: 34px;
+    color: white;
+    margin-left: 40px;
+    
+}
+
+.entrena-con-olliez__boton-final{
+
+    display: grid;
+    grid-template-columns: 1fr 234px;
+    grid-template-rows: 1fr;
+    height: 60px;
+    align-items: center;
+    margin-top: 80px;
+    margin-right: 6%;
+
+    & .boton-final__linea{
+        border: solid 1px white;
+        width: 98%;
+    }
+
+    & a {
+        background: white;
+        color: var(--color-principal);
+    }
+}
+
+
+/* Últimas noticias */
+
+.ultimas-noticias{
+    height: 600px;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.ultimas-noticias__informacion{
+    & h2 {
+        color: black;
+    }
+    & p {
+        margin: 24px 0 44px 0;
+    }
+}
+
+.ultimas-noticias__entradadas{
+    display: flex;
+    padding-left: 72px;
+    gap: 20px;
+
+}
+
+.entradas-card{
+    border-radius: 16px;
+    box-shadow: 0px 6px 24px 2px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    padding: 16px 16px 32px 16px;
+
+    & img {
+        width: 100%;
+        border-radius: 8px;
+    }
+    & div{
+        padding: 0 8px;
+    }
+
+    & h4{
+        margin-top: 8px;
+    }
+    & p {
+        margin: 16px 0 16px; 
+    }
+}
+    
+
+    .btn-leer-mas {
+        color: var(--color-secundary);
+        font-family: var(--secondary-text);
+        font-weight: 700;
+
+    }
+
+    /* testimonio */
+
+    .testimonios__contenedor{
+        height: 700px;
+
+        & h2 {
+            text-align: center;
+            color: black;
+        }
+
+    }
+    
+    .testimonios__card__contenedor{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        margin-top: 64px;
+    }
+
+    .testimonios__card{
+        background-color: var(--color-secundary);
+        border-radius: 16px;
+        padding: 48px;
+        text-align: center;
+        margin-top: 64px;
+
+        & p {
+            color: white;
+            margin-bottom: 16px;
+        }
+
+        & img {
+            border-radius: 100%;
+            width: 132px;
+            margin-top: -100px;
+            margin-bottom: 24px;
+        }
+    }
+    
+    .p-autor{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+
+    /* footer */
+
+    footer{
+        background-color: var(--color-principal);
+        height: 460px;
+    }
+
+
+
