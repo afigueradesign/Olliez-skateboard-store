@@ -688,5 +688,128 @@
         height: 460px;
     }
 
+    .footer__columnas{
+        display: grid;
+        grid-template-columns: 25% repeat(2, 20%) 35%;
+        grid-template-rows: auto;
+        padding: 44px 0;
+    }
+
+    .footer-col-A{
+        padding-right: 20px;
+    }
+
+    .footer-logo{
+        color: white;
+        font-size: 36px;
+        font-weight: 900;
+        margin-bottom: 24px;
+    }
+
+    .footer-col-A ul li {
+        color: white;
+        font-family: var(--secondary-text);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .footer__social-media{
+        display: flex;
+        gap: 16px;
+    }
+
+
+    .footer-col-B, .footer-col-C{
+        margin: 0 auto;
+    }
+
+    footer h5 {
+        color: white;
+        margin-bottom: 34px;
+    }
+
+    .footer-col-B ul li a {
+        color: white;
+        font-family: var(--secondary-text);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+
+
+    .footer-col-C ul li a {
+        color: white;
+        font-family: var(--secondary-text);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    .footer-col-D{
+        padding-left: 24px;
+    }
+
+    .footer-col-D p {
+        font-family: var(--secondary-text);
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        margin-bottom: 40px;
+    }
+
+    .footer-form{
+       
+        height: 50px;
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    .footer-input-email{
+        background: none;
+        height: 50px;
+
+        border: solid white 1px;
+        border-right: 0;
+    }
+   
+    .footer-input-email:focus-visible {
+        outline: -webkit-focus-ring-color 0px;
+    }
+
+    .footer-input-email::placeholder {
+        font-size: 16px;
+        font-family: var(--secondary-text);
+        color: white;
+        padding-inline: 18px;
+    }
+
+    .footer-form button{
+        height: 50px;
+        border: 1px solid var(--color-secundary);
+        background: var(--color-secundary);
+    }
+
+
+    .footer__derechos-reservados{
+        border-top: 1px solid white;
+        padding-top: 24px;
+
+        &  p{
+            color: white;
+            font-family: var(--color-secundary);
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+   
+
+
+
 
 
